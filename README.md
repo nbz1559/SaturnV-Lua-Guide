@@ -2,6 +2,8 @@
 A Guide on how to make your own Lua Scripts inside of the SaturnV Mod menu for GTA V Legacy (SP),
 
 # Important
+The SaturnV Lua API has not been fully finished yet, i have however documenented all the GUI API, in GUI.md
+
 I am yet to finish the native namespaces "HUD", "PED", and "VEHICLE"
 Those 3 are the last ones i need to add before the lua intergration gets fully released
 
