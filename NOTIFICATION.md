@@ -12,9 +12,9 @@ That will show a notification with the the text "Red" in red, and the text "Whit
 # notification.log("Info", IncludeDate)
 If IncludeDate is set to true, then the time and date will be displayed alongside your information
 
-This prints information to the text log found in ```%appdata%\SaturnV\InfoLog.txt
+This prints information to the log found in ```%appdata%\SaturnV\InfoLog.txt```
 If you want to print out an error type information, use the following below
 
 # notification.log_error("Info")
-This prints information in the error style format.
+This prints information in the error style format to the log found in ```%appdata%\SaturnV\InfoLog.txt```
 This one doesn't have a IncludeDate because ive set it like that
