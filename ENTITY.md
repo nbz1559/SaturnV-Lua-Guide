@@ -53,6 +53,7 @@ local table1 = entity.get_all_vehicles(true)
 local size = #table1
 
 for i = 1, size do
+local vehicle = table1[i]
     -- Do something with the vehicles
 end
 ```
