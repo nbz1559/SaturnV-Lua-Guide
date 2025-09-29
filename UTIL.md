@@ -32,3 +32,4 @@ function SPAWN_VEHICLE(modelname)
 end
 
 ```
+You COULD use MISC.GET_HASH_KEY() but thats lame and util.joaat() sounds better
