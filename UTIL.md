@@ -21,7 +21,7 @@ void SPAWN_VEHICLE(const char* modelname) {
 Lua:
 ```lua
 function SPAWN_VEHICLE(modelname)
-    local model = JOAAT(modelname)
+    local model = util.joaat(modelname) -- I have provided you with a function here
     if STREAMING.IS_MODEL_IN_CDIMAGE(model) then
         local p_coords = ENTITY.GET_ENTITY_COORDS(PLAYER.PLAYER_PED_ID(), true)
         local heading = ENTITY.GET_ENTITY_HEADING(PLAYER.PLAYER_PED_ID())
