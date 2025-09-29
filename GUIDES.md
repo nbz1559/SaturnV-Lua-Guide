@@ -70,8 +70,10 @@ Vehicles are called Vehicles
 Benches, bins and props for example are called Objects
 Things on the ground you can pickup (Like weapons) are called Pickups
 
-## Peds
+# Peds
 Peds are NPCS in the game, you also have your own personal ped which you can obtain through ```PLAYER.PLAYER_PED_ID()```, that gives you the handle to your ped which you can control with that
+
+## Creating Peds
 
 To create a ped, you can either call ```CREATE_PED``` or ```CREATE_PED_INSIDE_VEHICLE```
 Here are examples for both of those
@@ -79,10 +81,74 @@ CREATE_PED:
 ```lua
 function SPAWN_PED(type, model, x, y, z, heading)
 LOAD_MODEL(model) -- You will need to make your own load model function
-CREATE_PED(type, model, x, y, z, false, false)
+PED.CREATE_PED(type, model, x, y, z, false, false)
 STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(model)
 end
 ```
 The last 2 params for CREATE_PED are related to online so you can set them to false by default if you want, or you can use them its up to you
 'type' is the ped type for that ped. I will get to those a bit later but if you want a list now, here is one https://alloc8or.re/gta5/doc/enums/ePedType.txt
 'model' is the model for the ped, you can get it by using util.joaat("S_M_Y_COP_01") for example, that will give you the model for the standard cop.
+
+CREATE_PED_INSIDE_VEHICLE:
+```lua
+function SPAWN_PED_IN_VEHICLE(type, model, vehicle, seat)
+LOAD_MODEL(model) -- You will need to make your own load model function
+PED.CREATE_PED_INSIDE_VEHICLE(vehicle, type, model, seat, false, false)
+STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(model)
+end
+```
+The last 2 params for CREATE_PED_INSIDE_VEHICLE are related to online so you can set them to false by default if you want, or you can use them its up to you
+'type' is the ped type for that ped. I will get to those a bit later but if you want a list now, here is one https://alloc8or.re/gta5/doc/enums/ePedType.txt
+'model' is the model for the ped, you can get it by using util.joaat("S_M_Y_COP_01") for example, that will give you the model for the standard cop.
+'vehicle' is the vehicle handle you want to spawn the ped in
+'seat' is the seat you want to spawn the ped in, -1 is the drivers seat
+
+## Ped types
+Ped types give the ped behavioural differentals between other peds
+For example a cop is ped type 6 (PED_TYPE_COP)
+
+Here is a full list of ped types
+```
+0	PED_TYPE_PLAYER_0,
+1	PED_TYPE_PLAYER_1,
+2	PED_TYPE_NETWORK_PLAYER,
+3	PED_TYPE_PLAYER_2,
+4	PED_TYPE_CIVMALE,
+5	PED_TYPE_CIVFEMALE,
+6	PED_TYPE_COP,
+7	PED_TYPE_GANG_ALBANIAN,
+8	PED_TYPE_GANG_BIKER_1,
+9	PED_TYPE_GANG_BIKER_2,
+10	PED_TYPE_GANG_ITALIAN,
+11	PED_TYPE_GANG_RUSSIAN,
+12	PED_TYPE_GANG_RUSSIAN_2,
+13	PED_TYPE_GANG_IRISH,
+14	PED_TYPE_GANG_JAMAICAN,
+15	PED_TYPE_GANG_AFRICAN_AMERICAN,
+16	PED_TYPE_GANG_KOREAN,
+17	PED_TYPE_GANG_CHINESE_JAPANESE,
+18	PED_TYPE_GANG_PUERTO_RICAN,
+19	PED_TYPE_DEALER,
+20	PED_TYPE_MEDIC,
+21	PED_TYPE_FIREMAN,
+22	PED_TYPE_CRIMINAL,
+23	PED_TYPE_BUM,
+24	PED_TYPE_PROSTITUTE,
+25	PED_TYPE_SPECIAL,
+26	PED_TYPE_MISSION,
+27	PED_TYPE_SWAT,
+28	PED_TYPE_ANIMAL,
+29	PED_TYPE_ARMY
+```
+Ped types are used when creating a ped as you saw above, CREATE_PED(pedtype, pedmodel, x, y, z, heading, isNetwork, ScriptHostPed)
+
+## Ped models
+Ped models are what peds are inside the game. For example to spawn a cop you would do
+```lua
+cop_model = util.joaat("S_M_Y_COP_01")
+LOAD_MODEL(cop_model) -- You will need your own LOAD_MODEL function
+CREATE_PED(6, cop_model, 0, 0, 0, 0, false, false)
+STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(cop_model)
+```
+That is a basic example for spawning a cop at coords 0, 0, 0 and the heading 0 as well. If you want to spawn it at actual coords, I would recommend goint to the position you want to spawn the cop at, go to  World > Teleportation > Copy Position To Clipboard Inside of SaturnV and then use those coords for your spawn place.
+Here is a full list of ped models, https://docs.fivem.net/docs/game-references/ped-models/
