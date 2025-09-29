@@ -1,4 +1,4 @@
-# Version 1.20
+# Version 1.20 (Not released in menu)
 Added namespace util (See UTIL.md)
 
 # Version 1.15 (Current)
