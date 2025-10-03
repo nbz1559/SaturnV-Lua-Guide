@@ -81,12 +81,12 @@ If 'loop' is on, that means the code inside of the toggle will run every frame.
 If 'loop' is off, the code will run once.
 
 # Sliders
-## menu.slider(parent, name, desc, minval, maxval, increment, defaultval)
+## menu.slider(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
 
 Example:
 ```lua
 local my_root = menu.my_root()
-menu.slider(my_root, "Test", "Pick a value", 0, 10, 1, 0, function(value)
+menu.slider(my_root, "Test", "Pick a value", 0, 10, 1, 0, true, function(value)
 -- Example code
 PLAYER.SET_PLAYER_WANTED_LEVEL(PLAYER.PLAYER_ID(), val, false)
 PLAYER.SET_PLAYER_WANTED_LEVEL_NOW(PLAYER.PLAYER_ID(), false)
@@ -98,6 +98,7 @@ end)
 'maxval' Is the opposite of minval, its the maximum value the slider can go to.
 'increment' Is how much the slider goes up by every time the user presses the arrow key, if it set to 1 it will go up by 1, if its 2 it will go up by 2
 'defaultval' Is the value the slider is set to on default
+'isSliderClick' Means when the user presses enter on the slider, if isSliderClick is set to true, it will run the callback, if set to false it will prompt them with a textbox to input a value
 
 # Text sliders
 ## menu.text_slider(parent, name, desc, defaultindex, {Options table})
