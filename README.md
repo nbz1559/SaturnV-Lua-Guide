@@ -35,7 +35,7 @@ local example_slider = menu.slider(my_root, "Set wanted level", "Change your wan
 end)
 
 -- Variable example_slider_float is optional
-local example_slider_float = menu.slider_float(my_root, "Choose a decimal option", "Pick a option from 1.01 - 2.64", 1.01, 2.64, 0.01, 1.01, true, function(value)
+local example_slider_float = menu.slider_float(my_root, "Choose a decimal option", "Pick a option from 1.01 - 2.64", 1.01, 2.64, 0.01, 1.01, false, function(value)
 	notification.log("User picked " .. value, true)
 end)
 
