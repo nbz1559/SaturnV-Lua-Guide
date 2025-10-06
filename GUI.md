@@ -114,7 +114,7 @@ end)
 ```
 
 ### WHat each param means
-All parameters are the same as a regular slider, just you can use decimals. You can also just put an integer if you want to, but i would recommend a default slider for that
+All parameters are the same as a regular slider
 
 # Text sliders
 ## menu.text_slider(parent, name, desc, defaultindex, {Options table})
