@@ -100,6 +100,22 @@ end)
 'defaultval' Is the value the slider is set to on default
 'isSliderClick' Means when the user presses enter on the slider, if isSliderClick is set to true, it will run the callback, if set to false it will prompt them with a textbox to input a value
 
+# Slider Floats
+## menu.slider_float(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
+
+#### Explanation
+The difference between a slider and slider_float is slider_float can take decimels, where are sliders can only take integers, like 1, 2, 3, and slider floats can take 1.1, 2.2, 3.3333
+Example:
+```lua
+local my_root = menu.my_root()
+menu.slider_float(my_root, "Test", "Choose an option from 0.0, 7.7", 0.0, 7.7, 1.2, 0.5, true, function(value)
+-- Do something with the number given
+end)
+```
+
+### WHat each param means
+All parameters are the same as a regular slider, just you can use decimals. You can also just put an integer if you want to, but i would recommend a default slider for that
+
 # Text sliders
 ## menu.text_slider(parent, name, desc, defaultindex, {Options table})
 
