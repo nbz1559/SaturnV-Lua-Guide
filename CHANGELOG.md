@@ -1,5 +1,6 @@
 # Version 1.25 (Testing)
 Added Slider_float, see GUI.md for more info
+Fixed a function error with sliders
 
 # Version 1.20 (Current)
 Added namespace util (See UTIL.md)
