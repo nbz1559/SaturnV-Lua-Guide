@@ -56,4 +56,4 @@ local list = menu.list(my_root, "List", "A list with some options")
 node.delete(node)
 ```
 
-That will simply delete the node, be sure not to use the node after that because nothing will happen
+This will remove the node from the GUI aswell as all of its children if its a list. This erases the node from the node controller in the asi file, meaning it can no longer be used.
