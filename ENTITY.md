@@ -39,6 +39,7 @@ local table1 = entity.get_all_peds(true)
 local size = #table1
 
 for i = 1, size do
+local player = table1[i]
     -- Do something with the peds
 end
 ```
