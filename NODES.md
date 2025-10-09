@@ -28,7 +28,7 @@ node.rename_desc(action, "Description")
 That will change the description to "Description"
 If you want to rename the description/information use this
 
-#node.parent(node, parent)
+# node.parent(node, parent)
 
 Example:
 ```lua
@@ -43,7 +43,7 @@ node.parent(node, list)
 ```
 That will place the node inside of 'list' instead of the root
 
-#node.delete(node)
+# node.delete(node)
 
 Example:
 ```lua
@@ -59,7 +59,7 @@ node.delete(node)
 
 This will remove the node from the GUI aswell as all of its children if its a list. This erases the node from the node controller in the asi file, meaning it can no longer be used.
 
-#node.exists(node)
+# node.exists(node)
 
 Example:
 ```lua
