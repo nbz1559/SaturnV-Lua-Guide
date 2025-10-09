@@ -1,6 +1,7 @@
 # Version 1.3 (Testing)
 - Added hyper_link, see GUI.md for more info
 - Added node controlling, see NODES.md for more info
+- Added Variables, see VARIABLES.md for more info
 
 
 # Version 1.25 (Current)
