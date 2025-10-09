@@ -165,3 +165,14 @@ Personally i like to use this layout ``` -- Text -- ``` because it looks neat, b
 
 A place holder is something that is just there, to tell the user something like whats below it. in SaturnV > Lua Scripts > Your script, there is a place holder called ``` -- Lua Functions -- ```
 That is an example of a place holder
+
+# Hyper Links
+## menu.hyper_link(parent, name, desc, url)
+
+Example:
+```lua
+local my_root = menu.my_root()
+menu.hyper_link(my_root, "Open Youtube", "Directs you to youtube", "youtube.com")
+```
+
+Pretty straight foward, make sure to wrap your url in quotation marks
