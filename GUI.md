@@ -172,7 +172,7 @@ That is an example of a place holder
 Example:
 ```lua
 local my_root = menu.my_root()
-menu.hyper_link(my_root, "Open Youtube", "Directs you to youtube", "youtube.com")
+menu.hyper_link(my_root, "Open Youtube", "Directs you to youtube", "https://www.youtube.com/")
 ```
 
-Pretty straight foward, make sure to wrap your url in quotation marks
+Pretty straight foward, make sure you add the full link to the site, not just something like ```youtube.com```, do something like ```https://www.youtube.com/```
