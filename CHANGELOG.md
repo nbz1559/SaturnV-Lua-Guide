@@ -1,8 +1,11 @@
-# Version 1.25 (Testing)
+# Version 1.3 (Testing)
+Added hyper_link, see GUI.md for more info
+
+# Version 1.25 (Current)
 Added Slider_float, see GUI.md for more info
 Fixed a function error with sliders
 
-# Version 1.20 (Current)
+# Version 1.20
 Added namespace util (See UTIL.md)
 
 # Version 1.15
