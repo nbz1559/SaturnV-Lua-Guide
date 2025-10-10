@@ -2,7 +2,7 @@
 - Added hyper_link, see GUI.md for more info
 - Added read_only, see GUI.md for more info
 - Added node controlling, see NODES.md for more info
-- Added Variables, see VARIABLES.md for more info
+- Added Globals, see GLOBALS.md for more info
 
 
 # Version 1.25 (Current)
