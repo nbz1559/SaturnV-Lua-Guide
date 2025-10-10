@@ -1,6 +1,6 @@
 # Util
 
-## util.joaat("model name")
+## int util.joaat("model name")
 What is joaat?
 joaat is short for 'Jenkins on at a time' and is a hashing algorithm which takes strings like shown above and turns them into a 32 bit integer (unsigned int) used in programs like GTA V for storing models as a unique hash
 You would use joaat when spawning models, since you cant create models with strings in GTA V. Here is an example on how to make a spawn vehicle function where you currently are in c++ and lua.
