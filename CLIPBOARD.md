@@ -1,8 +1,8 @@
 # Clipboard
 The clipboard is what you use to ctrl + c and ctrl + v stuff, here are some functions you can use to control the users clipboard
 
-# void clipboard.set(text)
+# void user_clipboard.set(text)
 This sets the clipboard data to the text provided
 
-# string clipboard.read()
+# string user_clipboard.read()
 This returns data from the users clipboard
