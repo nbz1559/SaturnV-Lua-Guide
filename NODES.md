@@ -1,7 +1,7 @@
 # Nodes
 Nodes are what the actions and toggles etc are in your script, when you do menu.action() for example, it will return an ID of the node, which you can do multiple things with, like re-parent it, re-name it, change the description, delete it and more
 
-# node.rename(node, name)
+# void node.rename(node, name)
 Example:
 ```lua
 local my_root = menu.my_root()
@@ -14,7 +14,7 @@ node.rename(action, "This has been renamed")
 That will change the name to "This has been renamed"
 If you want to change the name of the node use this
 
-# node.rename_desc(node, desc)
+# void node.rename_desc(node, desc)
 
 Example:
 ```lua
@@ -28,7 +28,7 @@ node.rename_desc(action, "Description")
 That will change the description to "Description"
 If you want to rename the description/information use this
 
-# node.parent(node, parent)
+# void node.parent(node, parent)
 
 Example:
 ```lua
@@ -43,7 +43,7 @@ node.parent(node, list)
 ```
 That will place the node inside of 'list' instead of the root
 
-# node.delete(node)
+# void node.delete(node)
 
 Example:
 ```lua
@@ -59,7 +59,7 @@ node.delete(node)
 
 This will remove the node from the GUI aswell as all of its children if its a list. This erases the node from the node controller in the asi file, meaning it can no longer be used.
 
-# node.exists(node)
+# bool node.exists(node)
 
 Example:
 ```lua
