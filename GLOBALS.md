@@ -1,5 +1,5 @@
-# Variables
-Variables are things in your script that you can use, like your script name, like "Example Script", or the path like "C:/<User>/Path?"
+# Globals
+Globals are things in your script that you can use, like your script name, like "Example Script", or the path like "C:/<User>/Path?"
 
 # string SCRIPT_NAME
 This is your scripts name, like "Example Script"
