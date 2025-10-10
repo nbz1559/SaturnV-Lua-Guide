@@ -1,7 +1,7 @@
 # GUI API
 
 # My Root
-## menu.my_root()
+## int menu.my_root()
 
 my_root is what you use to define where your functions will be displayed.
 
@@ -12,7 +12,7 @@ local my_root = menu.my_root()
 This is the most important part, because otherwise you wouldn't have anywhere to start.
 
 # Lists (Submenus)
-## menu.list(Parent, name, desc)
+## int menu.list(Parent, name, desc)
 
 Example:
 ```lua
@@ -23,7 +23,7 @@ local my_list = menu.list(my_root, "Test", "Open this")
 In other menu API, for the parent you can either put my_root down (This just attaches it to the base) or you could put a list variable down.
 
 # Actions
-## menu.action(Parent, name, desc)
+## int menu.action(Parent, name, desc)
 
 Example:
 ```lua
@@ -46,7 +46,7 @@ There are some options you can do, if you dont want a description, just leave th
 Actions are the things in the menu that you click (Press enter on), and it runs a single function.
 
 # Toggles
-## menu.toggle(Parent, name, desc, default, loop)
+## int menu.toggle(Parent, name, desc, default, loop)
 
 Example:
 ```lua
@@ -81,7 +81,7 @@ If 'loop' is on, that means the code inside of the toggle will run every frame.
 If 'loop' is off, the code will run once.
 
 # Sliders
-## menu.slider(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
+## int menu.slider(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
 
 Example:
 ```lua
@@ -101,7 +101,7 @@ end)
 'isSliderClick' Means when the user presses enter on the slider, if isSliderClick is set to true, it will run the callback, if set to false it will prompt them with a textbox to input a value
 
 # Slider Floats
-## menu.slider_float(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
+## int menu.slider_float(parent, name, desc, minval, maxval, increment, defaultval, isSliderClick)
 
 #### Explanation
 The difference between a slider and slider_float is slider_float can take decimels, where are sliders can only take integers, like 1, 2, 3, and slider floats can take 1.1, 2.2, 3.3333
@@ -117,7 +117,7 @@ end)
 All parameters are the same as a regular slider
 
 # Text sliders
-## menu.text_slider(parent, name, desc, defaultindex, {Options table})
+## int menu.text_slider(parent, name, desc, defaultindex, {Options table})
 
 Example:
 ```lua
@@ -138,7 +138,7 @@ First off, a bit about 'indexs', in the options table, Option 1 will always be 0
 '{Options table}' Is where the options for your text_slider will be
 
 # Text inputs
-## menu.text_input(parent, name, desc)
+## int menu.text_input(parent, name, desc)
 
 Example:
 ```lua
@@ -153,7 +153,7 @@ All of them are the same as others
 The call back (text) is a string, to convert it to a number, do ```tonumber(text) ```
 
 # Place holders
-## menu.place_holder(parent, name)
+## int menu.place_holder(parent, name)
 
 Example:
 ```lua
@@ -167,7 +167,7 @@ A place holder is something that is just there, to tell the user something like 
 That is an example of a place holder
 
 # Hyper Links
-## menu.hyper_link(parent, name, desc, url)
+## int menu.hyper_link(parent, name, desc, url)
 
 Example:
 ```lua
