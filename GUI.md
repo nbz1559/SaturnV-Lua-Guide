@@ -176,3 +176,14 @@ menu.hyper_link(my_root, "Open Youtube", "Directs you to youtube", "https://www.
 ```
 
 Pretty straight foward, make sure you add the full link to the site, not just something like ```youtube.com```, do something like ```https://www.youtube.com/```
+
+# Read Onlys
+## int menu.read_only(parent, name, desc)
+
+Example:
+```lua
+local my_root = menu.my_root()
+menu.read_only(my_root, "Some Information", "")
+```
+
+Read Onlys are different from place holders, place holders are skipped over when navigating in the menu, but read onlys are like every other standard option, and their value (name) can be copied to the clipboard
