@@ -10,6 +10,7 @@ local table1 = entity.get_all_objects()
 local size = #table1
 
 for i = 1, size do
+local object = table1[i]
     -- Do something with the objects
 end
 ```
@@ -24,6 +25,7 @@ local table1 = entity.get_all_pickups()
 local size = #table1
 
 for i = 1, size do
+local pickup = table1[i]
     -- Do something with the pickups
 end
 ```
