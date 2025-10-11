@@ -1,4 +1,4 @@
-# Version 1.3 (Testing)
+# Version 1.3 (Current)
 - Added hyper_link, see GUI.md for more info
 - Added read_only, see GUI.md for more info
 - Added node controlling, see NODES.md for more info
@@ -6,7 +6,7 @@
 - Added Clipboard functions, see CLIPBOARD.md for more info
 
 
-# Version 1.25 (Current)
+# Version 1.25
 - Added Slider_float, see GUI.md for more info
 - Fixed a function error with sliders
 
