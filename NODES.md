@@ -39,7 +39,7 @@ end)
 
 local list = menu.list(my_root, "List", "A list with some options")
 
-node.parent(node, list)
+node.parent(action, list)
 ```
 That will place the node inside of 'list' instead of the root
 
