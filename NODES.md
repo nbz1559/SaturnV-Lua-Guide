@@ -52,9 +52,7 @@ local action = menu.action(my_root, "Test", "", function()
 
 end)
 
-local list = menu.list(my_root, "List", "A list with some options")
-
-node.delete(node)
+node.delete(action)
 ```
 
 This will remove the node from the GUI aswell as all of its children if its a list. This erases the node from the node controller in the asi file, meaning it can no longer be used.
@@ -68,11 +66,9 @@ local action = menu.action(my_root, "Test", "", function()
 
 end)
 
-local list = menu.list(my_root, "List", "A list with some options")
+node.delete(action)
 
-node.delete(node)
-
-if not node.exists(node) then
+if not node.exists(action) then
   notification.send("Node no longer exists!!")
 ```
 
