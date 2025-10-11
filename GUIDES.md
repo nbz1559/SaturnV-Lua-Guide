@@ -8,7 +8,7 @@ To load in a model, you need to call ```STREAMING.REQUEST_MODEL(model)``` to req
 ```lua
 function LOAD_MODEL(model)
 if STREAMING.IS_MODEL_VALID(model) then
-STREAMING::REQUEST_MODEL(model); -- Request the model in memory
+STREAMING.REQUEST_MODEL(model) -- Request the model in memory
 -- I suggest making a timeout feature to wait for the model to load. Usually it will only take a couple of milliseconds to load, it all depends on your PC
 else
 -- Notify the user that an invalid model has been chosen
