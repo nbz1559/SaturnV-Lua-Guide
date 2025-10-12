@@ -60,3 +60,16 @@ local vehicle = table1[i]
     -- Do something with the vehicles
 end
 ```
+
+# int entity.delete(entityhandle)
+This will delete any entity (ped, vehicle, object etc) for you, because you cant delete entities with lua.
+The reason entity.delete is an int and not a void is because it returns 0 to set your handle variable (if you are using one) to 0
+Example:
+```lua
+local vehiclehandle = PED.GET_VEHICLE_PED_IS_IN(PLAYER.PLAYER_PED_ID(), false) -- vehiclehandle will initially be set to the handle like 29292323 if the vehicle exists
+
+if ENTITY.DOES_ENTITY_EXIST(vehiclehandle)
+    vehiclehandle = entity.delete(vehiclehandle) -- This will set your handle to 0, you can do this manually but this is quicker
+end
+```
+Make sure not to try and delete an entity yourself with ENTITY.DELETE_ENTITY() because that will most likely crash your game
