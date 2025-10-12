@@ -1,3 +1,7 @@
+# Version 1.35 (Testing)
+- Added entity.delete(handle), see ENTITY.md for more info
+
+
 # Version 1.3 (Current)
 - Added hyper_link, see GUI.md for more info
 - Added read_only, see GUI.md for more info
