@@ -137,6 +137,31 @@ First off, a bit about 'indexs', in the options table, Option 1 will always be 0
 'defaultindex' Is the same as 'defaultval' from before, set it to 0 if you want your Option1 to be the default
 '{Options table}' Is where the options for your text_slider will be
 
+# List Selects
+## int menu.list_select(parent, name, desc, {Actions table})
+
+Example:
+```lua
+local my_root = menu.my_root()
+local example_action_list = menu.list_select(my_root, "Example Action List", "", {"Option 1", "Option 2", "Option 3"}, function(index)
+    if index == 0 then
+        notification.send("You picked Option 1") -- Index 0 will always be the first option
+    elseif index == 1 then
+        notification.send("You picked Option 2")
+    elseif index == 2 then
+        notification.send("You picked Option 3")
+    end
+end)
+```
+
+### What each param means
+parent name and desc are all pretty straight foward
+Actions table is the table of options you want to add in order from first to last
+
+### How to use
+```index``` will return you which option the user clicked, if its 0, that means option 1 was clicked, if its 1, option 2 was clicked and so on
+This is a replacement for text_slider if you dont want the slider part, only the list selection part.
+
 # Text inputs
 ## int menu.text_input(parent, name, desc)
 
