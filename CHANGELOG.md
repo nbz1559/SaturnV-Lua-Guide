@@ -1,5 +1,9 @@
+# Version 1.4 (Testing)
+- Added menu.list_select, see GUI.md for more info
+
+
 # Version 1.35 (Current)
-- Added entity.delete(handle), see ENTITY.md for more info
+- Added entity.delete, see ENTITY.md for more info
 
 
 # Version 1.3
