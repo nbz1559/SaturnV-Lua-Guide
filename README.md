@@ -14,7 +14,10 @@
 - If anything goes wrong with running your script, or your script doesn't appear in the menu, notify me in the discord, which will be in my GitHub profile description.
 Thanks for using SaturnV! - nbz1559
 
-Here is a working example script, you can either copy and paste this into your lua script, or download it from the menu, SaturnV > Lua Scripts > Repository > Example Script
+# Example Script
+- Below is an example script with all the current GUI features avalible for SaturnV, if you want to use more features, visit the ```.md``` files to the left.
+
+- You can also download this file straight from the menu whilst inside of GTA, go to Scripting > Repository > Example Script and click on it, you can then find it under -- Scripts --
 ```lua
 local my_root = menu.my_root()
 
