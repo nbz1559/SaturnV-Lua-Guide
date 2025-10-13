@@ -188,8 +188,7 @@ menu.place_holder(my_root, " -- Cars -- ")
 
 Personally i like to use this layout ``` -- Text -- ``` because it looks neat, but you can do whatever
 
-A place holder is something that is just there, to tell the user something like whats below it. in SaturnV > Lua Scripts > Your script, there is a place holder called ``` -- Lua Functions -- ```
-That is an example of a place holder
+A place holder is something that is just there, to tell the user something like whats below it.
 
 # Hyper Links
 ## int menu.hyper_link(parent, name, desc, url)
