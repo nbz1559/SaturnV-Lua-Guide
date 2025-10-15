@@ -1,8 +1,9 @@
-# Version 1.4 (Testing)
+# Version 1.4 (Current)
 - Added menu.list_select, see GUI.md for more info
+- Fixed some issues
 
 
-# Version 1.35 (Current)
+# Version 1.35
 - Added entity.delete, see ENTITY.md for more info
 
 
