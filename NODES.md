@@ -70,6 +70,7 @@ node.delete(action)
 
 if not node.exists(action) then
   notification.send("Node no longer exists!!")
+end
 ```
 
 This will return a bool which is true if the node exists, and false if it doesn't. This can be useful if you are removing a node and need to check if its removed
