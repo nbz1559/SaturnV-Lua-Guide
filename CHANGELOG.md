@@ -1,3 +1,6 @@
+# Version 1.5 (Testing)
+- Added util.load_model(model)
+
 # Version 1.4 (Current)
 - Added menu.list_select, see GUI.md for more info
 - Fixed some issues
