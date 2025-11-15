@@ -1,5 +1,5 @@
 # Version 1.6 (Current)
-- Added namespace 'memory'
+- Added namespace 'memory', see `MEMORY.md`
 
 
 # Version 1.5
