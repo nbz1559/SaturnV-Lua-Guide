@@ -1,7 +1,11 @@
-# Version 1.5 (Testing)
+# Version 1.6 (Current)
+- Added namespace 'memory'
+
+
+# Version 1.5
 - Added util.load_model(model)
 
-# Version 1.4 (Current)
+# Version 1.4
 - Added menu.list_select, see GUI.md for more info
 - Fixed some issues
 
