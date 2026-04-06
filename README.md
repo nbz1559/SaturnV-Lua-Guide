@@ -1,4 +1,7 @@
 # SaturnV-Lua-Guide
+## Important
+- As of 12/01/2026, SaturnV no longer supports Lua scripting
+
 - You will need basic scripting knowledge of lua, if you have absoloutly no idea what you are doing, i suggest you watch a tutorial on lua first
 
 - A Guide on how to make your own Lua Scripts inside of the SaturnV Mod menu for GTA V Legacy (SP),
