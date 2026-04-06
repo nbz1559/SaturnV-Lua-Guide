@@ -1,6 +1,5 @@
 # ⚠️ Important ⚠️
 ## As of 12/01/2026, SaturnV no longer supports Lua scripting
-# 
 # SaturnV-Lua-Guide
 - You will need basic scripting knowledge of lua, if you have absoloutly no idea what you are doing, i suggest you watch a tutorial on lua first
 
